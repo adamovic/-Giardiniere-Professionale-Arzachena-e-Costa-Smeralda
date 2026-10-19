@@ -1,0 +1,177 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Galleria Lavori - Giardiniere Professionista{% endblock %}
+
+{% block content %}
+<!-- Page Header -->
+<section class="page-header bg-success text-white py-5">
+    <div class="container">
+        <div class="text-center">
+            <h1 class="display-4 fw-bold">Galleria dei Miei Lavori</h1>
+            <p class="lead">Scopri la qualità e la cura che metto in ogni progetto</p>
+        </div>
+    </div>
+</section>
+
+<!-- Gallery Section -->
+<section class="py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="{% static 'images/image1.png' %}" class="card-img-top" alt="Manutenzione Giardino" style="height: 250px; object-fit: cover;">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title text-success">Manutenzione Giardino</h5>
+                        <p class="card-text">Prato perfetto e fiori colorati per un giardino residenziale ad Arzachena.</p>
+                        <div class="mt-auto">
+                            <small class="text-muted">
+                                <i class="fas fa-calendar me-1"></i>
+                                Febbraio 2024
+                            </small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="{% static 'images/image2.jpeg' %}" class="card-img-top" alt="Potatura Professionale" style="height: 250px; object-fit: cover;">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title text-success">Potatura Professionale</h5>
+                        <p class="card-text">Potatura precisa di alberi e arbusti per garantire salute e crescita ottimale.</p>
+                        <div class="mt-auto">
+                            <small class="text-muted">
+                                <i class="fas fa-calendar me-1"></i>
+                                Gennaio 2024
+                            </small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="{% static 'images/image3.jpeg' %}" class="card-img-top" alt="Progettazione Giardino" style="height: 250px; object-fit: cover;">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title text-success">Progettazione Giardino</h5>
+                        <p class="card-text">Creazione di un giardino mediterraneo con piante autoctone della Sardegna.</p>
+                        <div class="mt-auto">
+                            <small class="text-muted">
+                                <i class="fas fa-calendar me-1"></i>
+                                Dicembre 2023
+                            </small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="{% static 'images/image4.jpeg' %}" class="card-img-top" alt="Irrigazione Automatica" style="height: 250px; object-fit: cover;">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title text-success">Irrigazione Automatica</h5>
+                        <p class="card-text">Installazione sistema di irrigazione a goccia per risparmio idrico.</p>
+                        <div class="mt-auto">
+                            <small class="text-muted">
+                                <i class="fas fa-calendar me-1"></i>
+                                Novembre 2023
+                            </small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="{% static 'images/image5.jpeg' %}" class="card-img-top" alt="Manutenzione Periodica" style="height: 250px; object-fit: cover;">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title text-success">Manutenzione Periodica</h5>
+                        <p class="card-text">Servizio di manutenzione settimanale per ville nella Costa Smeralda.</p>
+                        <div class="mt-auto">
+                            <small class="text-muted">
+                                <i class="fas fa-calendar me-1"></i>
+                                Ottobre 2023
+                            </small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="{% static 'images/image6.jpeg' %}" class="card-img-top" alt="Giardino Mediterraneo" style="height: 250px; object-fit: cover;">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title text-success">Giardino Mediterraneo</h5>
+                        <p class="card-text">Progetto completo con piante tipiche della flora sarda e design moderno.</p>
+                        <div class="mt-auto">
+                            <small class="text-muted">
+                                <i class="fas fa-calendar me-1"></i>
+                                Settembre 2023
+                            </small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="{% static 'images/image7.jpeg' %}" class="card-img-top" alt="Trattamento del Suolo" style="height: 250px; object-fit: cover;">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title text-success">Trattamento del Suolo</h5>
+                        <p class="card-text">Analisi e miglioramento del terreno per una crescita sana delle piante.</p>
+                        <div class="mt-auto">
+                            <small class="text-muted">
+                                <i class="fas fa-calendar me-1"></i>
+                                Agosto 2023
+                            </small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="{% static 'images/image8.jpeg' %}" class="card-img-top" alt="Controllo Parassiti" style="height: 250px; object-fit: cover;">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title text-success">Controllo Parassiti</h5>
+                        <p class="card-text">Trattamenti ecologici per proteggere le piante da malattie e parassiti.</p>
+                        <div class="mt-auto">
+                            <small class="text-muted">
+                                <i class="fas fa-calendar me-1"></i>
+                                Luglio 2023
+                            </small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="{% static 'images/image9.jpeg' %}" class="card-img-top" alt="Giardino Villa Costa Smeralda" style="height: 250px; object-fit: cover;">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title text-success">Giardino Villa Costa Smeralda</h5>
+                        <p class="card-text">Progetto completo per villa di lusso con vista mare nella Costa Smeralda.</p>
+                        <div class="mt-auto">
+                            <small class="text-muted">
+                                <i class="fas fa-calendar me-1"></i>
+                                Giugno 2023
+                            </small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Call to Action -->
+<section class="py-5 bg-light">
+    <div class="container">
+        <div class="text-center">
+            <h2 class="display-5 fw-bold text-success mb-4">Ti piacerebbe un giardino così?</h2>
+            <p class="lead mb-4">
+                Contattami per una consulenza gratuita e trasforma il tuo spazio verde in un angolo di paradiso.
+            </p>
+            <a href="https://wa.me/393899474767" target="_blank" class="btn btn-success btn-lg me-3">
+                <i class="fab fa-whatsapp me-2"></i>Contattami su WhatsApp
+            </a>
+            <a href="{% url 'core:home' %}" class="btn btn-outline-success btn-lg">
+                <i class="fas fa-home me-2"></i>Torna alla Home
+            </a>
+        </div>
+    </div>
+</section>
+{% endblock %}

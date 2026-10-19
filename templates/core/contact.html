@@ -1,0 +1,155 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load crispy_forms_tags %}
+
+{% block title %}Contatti - Giardiniere Professionista{% endblock %}
+
+{% block content %}
+<!-- Page Header -->
+<section class="page-header bg-success text-white py-5">
+    <div class="container">
+        <div class="text-center">
+            <h1 class="display-4 fw-bold">Contattami</h1>
+            <p class="lead">Sono a tua disposizione per qualsiasi informazione o preventivo</p>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section class="py-5">
+    <div class="container">
+        <div class="row">
+            <!-- Contact Form -->
+            <div class="col-lg-8 mb-4">
+                <div class="card shadow-sm">
+                    <div class="card-body p-4">
+                        <h3 class="card-title text-success mb-4">
+                            <i class="fab fa-whatsapp me-2"></i>Contattami su WhatsApp
+                        </h3>
+                        <div class="text-center mb-4">
+                            <a href="https://wa.me/393899474767" target="_blank" class="btn btn-success btn-lg">
+                                <i class="fab fa-whatsapp me-2"></i>Apri WhatsApp
+                            </a>
+                        </div>
+                        <hr>
+                        <p class="text-muted text-center">Oppure compila il modulo qui sotto per inviarmi un messaggio diretto:</p>
+                        <form method="post">
+                            {% csrf_token %}
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    {{ form.name|as_crispy_field }}
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    {{ form.email|as_crispy_field }}
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                {{ form.phone|as_crispy_field }}
+                            </div>
+                            <div class="mb-4">
+                                {{ form.message|as_crispy_field }}
+                            </div>
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-success btn-lg px-5">
+                                    <i class="fas fa-paper-plane me-2"></i>Invia Messaggio
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Information -->
+            <div class="col-lg-4">
+                <div class="card shadow-sm mb-4">
+                    <div class="card-body">
+                        <h4 class="card-title text-success mb-4">
+                            <i class="fas fa-info-circle me-2"></i>Informazioni di Contatto
+                        </h4>
+                        <div class="contact-info">
+                            <div class="mb-3">
+                                <i class="fas fa-user text-success me-3"></i>
+                                <strong>Adil ELMERABET</strong>
+                                <br>
+                                <small class="text-muted">Giardiniere Professionista</small>
+                            </div>
+                            <div class="mb-3">
+                                <i class="fab fa-whatsapp text-success me-3"></i>
+                                <a href="https://wa.me/393899474767" target="_blank" class="text-success text-decoration-none">
+                                    <strong>+39 389 947 4767</strong>
+                                </a>
+                                <br>
+                                <small class="text-muted">Clicca per contattarmi direttamente su WhatsApp</small>
+                            </div>
+                            <div class="mb-3">
+                                <i class="fas fa-map-marker-alt text-success me-3"></i>
+                                <strong>Arzachena, Costa Smeralda</strong>
+                                <br>
+                                <small class="text-muted">Disponibile per lavori in Sardegna</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Working Hours -->
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <h4 class="card-title text-success mb-4">
+                            <i class="fas fa-clock me-2"></i>Orari di Lavoro
+                        </h4>
+                        <div class="working-hours">
+                            <div class="d-flex justify-content-between mb-2">
+                                <span>Lunedì - Venerdì</span>
+                                <strong>8:00 - 18:00</strong>
+                            </div>
+                            <div class="d-flex justify-content-between mb-2">
+                                <span>Sabato</span>
+                                <strong>8:00 - 13:00</strong>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <span>Domenica</span>
+                                <strong class="text-muted">Chiuso</strong>
+                            </div>
+                        </div>
+                        <div class="mt-3 p-3 bg-light rounded">
+                            <small class="text-muted">
+                                <i class="fas fa-info-circle me-1"></i>
+                                Per emergenze o lavori urgenti, contattami anche fuori orario.
+                            </small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Additional Information -->
+<section class="py-5 bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="text-center">
+                    <i class="fas fa-check-circle fa-3x text-success mb-3"></i>
+                    <h5>Preventivo Gratuito</h5>
+                    <p>Contattami per un sopralluogo e preventivo senza impegno.</p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="text-center">
+                    <i class="fas fa-tools fa-3x text-success mb-3"></i>
+                    <h5>Attrezzatura Professionale</h5>
+                    <p>Utilizzo solo attrezzature di alta qualità per risultati eccellenti.</p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="text-center">
+                    <i class="fas fa-shield-alt fa-3x text-success mb-3"></i>
+                    <h5>Lavoro Garantito</h5>
+                    <p>Tutti i miei lavori sono coperti da garanzia di soddisfazione.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

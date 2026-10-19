@@ -1,0 +1,224 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Home - Giardiniere Professionista{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="hero-section bg-success text-white py-5">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <h1 class="display-4 fw-bold mb-4">Adil ELMERABET</h1>
+                <h2 class="h3 mb-4">Giardiniere Professionista con 15+ anni di esperienza</h2>
+                <p class="lead mb-4">
+                    Specializzato nella cura e manutenzione di giardini residenziali e commerciali. 
+                    Offro servizi di alta qualità per trasformare il tuo spazio verde in un angolo di paradiso.
+                </p>
+                <div class="d-flex gap-3">
+                    <a href="https://wa.me/393899474767" target="_blank" class="btn btn-light btn-lg">
+                        <i class="fab fa-whatsapp me-2"></i>Contattami su WhatsApp
+                    </a>
+                    <a href="{% url 'core:gallery' %}" class="btn btn-outline-light btn-lg">
+                        <i class="fas fa-images me-2"></i>I miei lavori
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <img src="{% static 'images/WhatsApp Image 2026-02-22 at 11.33.48.jpeg' %}" alt="Adil ELMERABET - Giardiniere Professionista" class="img-fluid rounded shadow">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- About Section -->
+<section class="py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center mb-5">
+                <h2 class="display-5 fw-bold text-success">Chi Sono</h2>
+                <p class="lead">
+                    Con oltre 15 anni di esperienza nel settore del giardinaggio, ho dedicato la mia carriera 
+                    alla creazione e manutenzione di spazi verdi unici. La mia passione per la natura e 
+                    l'attenzione ai dettagli mi distinguono nel settore.
+                </p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <div class="card h-100 border-success">
+                    <div class="card-body">
+                        <h4 class="card-title text-success">
+                            <i class="fas fa-user-tie me-2"></i>Informazioni Personali
+                        </h4>
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><strong>Nome:</strong> Adil ELMERABET</li>
+                            <li class="mb-2"><strong>Età:</strong> 42 anni</li>
+                            <li class="mb-2"><strong>Esperienza:</strong> 15+ anni</li>
+                            <li class="mb-2"><strong>Zona di lavoro:</strong> Arzachena, Costa Smeralda</li>
+                            <li class="mb-2"><strong>Lingua:</strong> Italiano</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="card h-100 border-success">
+                    <div class="card-body">
+                        <h4 class="card-title text-success">
+                            <i class="fas fa-phone me-2"></i>Contatti
+                        </h4>
+                        <ul class="list-unstyled">
+                            <li class="mb-2">
+                                <i class="fab fa-whatsapp text-success me-2"></i>
+                                <strong>WhatsApp:</strong> <a href="https://wa.me/393899474767" target="_blank" class="text-success text-decoration-none">+39 389 947 4767</a>
+                            </li>
+                            <li class="mb-2">
+                                <i class="fas fa-map-marker-alt text-success me-2"></i>
+                                <strong>Sede:</strong> Arzachena, Costa Smeralda
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Services Section -->
+<section class="py-5 bg-light">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="display-5 fw-bold text-success">I Miei Servizi</h2>
+            <p class="lead">Servizi professionali per ogni tipo di giardino</p>
+        </div>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 text-center">
+                    <div class="card-body">
+                        <i class="fas fa-cut fa-3x text-success mb-3"></i>
+                        <h5 class="card-title">Potatura</h5>
+                        <p class="card-text">Potatura professionale di alberi, arbusti e piante per garantire salute e crescita ottimale.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 text-center">
+                    <div class="card-body">
+                        <i class="fas fa-seedling fa-3x text-success mb-3"></i>
+                        <h5 class="card-title">Progettazione Giardini</h5>
+                        <p class="card-text">Creazione di giardini su misura, dal design alla realizzazione completa.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 text-center">
+                    <div class="card-body">
+                        <i class="fas fa-tint fa-3x text-success mb-3"></i>
+                        <h5 class="card-title">Irrigazione</h5>
+                        <p class="card-text">Installazione e manutenzione di sistemi di irrigazione automatici ed efficienti.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 text-center">
+                    <div class="card-body">
+                        <i class="fas fa-broom fa-3x text-success mb-3"></i>
+                        <h5 class="card-title">Manutenzione</h5>
+                        <p class="card-text">Servizi di manutenzione periodica per mantenere il tuo giardino sempre perfetto.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 text-center">
+                    <div class="card-body">
+                        <i class="fas fa-spa fa-3x text-success mb-3"></i>
+                        <h5 class="card-title">Trattamento del Suolo</h5>
+                        <p class="card-text">Analisi e miglioramento del terreno per una crescita sana delle piante.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 text-center">
+                    <div class="card-body">
+                        <i class="fas fa-bug fa-3x text-success mb-3"></i>
+                        <h5 class="card-title">Controllo Parassiti</h5>
+                        <p class="card-text">Trattamenti ecologici per proteggere le piante da malattie e parassiti.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Recent Projects Preview -->
+<section class="py-5">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="display-5 fw-bold text-success">Ultimi Lavori</h2>
+            <p class="lead">Un anteprima dei miei progetti recenti</p>
+        </div>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="{% static 'images/image1.png' %}" class="card-img-top" alt="Giardino curato" style="height: 200px; object-fit: cover;">
+                    <div class="card-body">
+                        <h5 class="card-title">Manutenzione Giardino</h5>
+                        <p class="card-text">Prato perfetto e fiori colorati per un giardino residenziale ad Arzachena.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="{% static 'images/image2.jpeg' %}" class="card-img-top" alt="Potatura professionale" style="height: 200px; object-fit: cover;">
+                    <div class="card-body">
+                        <h5 class="card-title">Potatura Professionale</h5>
+                        <p class="card-text">Potatura precisa di alberi e arbusti per garantire salute e crescita ottimale.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="{% static 'images/image3.jpeg' %}" class="card-img-top" alt="Progettazione giardino" style="height: 200px; object-fit: cover;">
+                    <div class="card-body">
+                        <h5 class="card-title">Progettazione Giardino</h5>
+                        <p class="card-text">Creazione di un giardino mediterraneo con piante autoctone della Sardegna.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="{% static 'images/image4.jpeg' %}" class="card-img-top" alt="Sistema irrigazione" style="height: 200px; object-fit: cover;">
+                    <div class="card-body">
+                        <h5 class="card-title">Irrigazione Automatica</h5>
+                        <p class="card-text">Installazione sistema di irrigazione a goccia per risparmio idrico.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="{% static 'images/image5.jpeg' %}" class="card-img-top" alt="Manutenzione periodica" style="height: 200px; object-fit: cover;">
+                    <div class="card-body">
+                        <h5 class="card-title">Manutenzione Periodica</h5>
+                        <p class="card-text">Servizio di manutenzione settimanale per ville nella Costa Smeralda.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="{% static 'images/image6.jpeg' %}" class="card-img-top" alt="Giardino Costa Smeralda" style="height: 200px; object-fit: cover;">
+                    <div class="card-body">
+                        <h5 class="card-title">Giardino Mediterraneo</h5>
+                        <p class="card-text">Progetto completo con piante tipiche della flora sarda e design moderno.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-center mt-4">
+            <a href="{% url 'core:gallery' %}" class="btn btn-success btn-lg">
+                <i class="fas fa-images me-2"></i>Vedi tutti i lavori
+            </a>
+        </div>
+    </div>
+</section>
+{% endblock %}
